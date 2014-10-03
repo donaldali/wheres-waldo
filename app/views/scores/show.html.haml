@@ -1,0 +1,27 @@
+.score-container
+  %h1 Where's Waldo Result
+
+  .info
+    %h4
+      = "Congratulations #{get_player_name}, you finished the"
+      %span #{@score.board.name}
+      = "level"
+    %p
+      Your time was
+      %span= format_time @score.score
+
+  = link_to "Play Again", boards_path
+
+  - if @made_leaderboard
+    %p Hey, you made the leaderboard
+
+  %table
+    %thead
+      %tr
+        %th{colspan: "2"}
+          %h3 Leaderboard
+    %tbody
+      %tr
+        %td Player
+        %td Score (Time)
+      = render @top_scores

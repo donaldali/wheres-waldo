@@ -1,0 +1,25 @@
+.board-container
+  %h4.instruction
+    Identify a character 'Left to Find' (shown on the right) on the board 
+    by clicking the character on the board
+    %span= image_tag "close.png"
+
+  .main-image
+    = image_tag "boards/#{ @board.filename }"
+
+    .options
+      %div Who did you find
+      - @characters.each do |character|
+        %button{class: "#{character.name}", value: "#{character.name}"}
+          = "#{character.name.capitalize}"
+
+    .message
+      %span Try Again
+      = image_tag "close.png"
+
+
+  .characters-left
+    %h4 Left To Find
+
+    %ul
+      = render @characters

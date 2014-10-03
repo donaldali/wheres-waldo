@@ -1,0 +1,12 @@
+.player-container
+  %h1 Welcome to Where's Waldo
+
+  %p Before you go searching for Waldo, please enter your name 
+
+  = form_for @player do |f|
+    = f.label :name
+    = f.text_field :name, maxlength: 20, autofocus: 'autofocus',
+                          placeholder: 'Up to 20 characters'
+    = f.submit "Go Search"
+
+  %div Play as a Guest by not providing a name

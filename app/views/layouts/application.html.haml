@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+%html
+  %head
+    %title Where's Waldo
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+    = favicon_link_tag 'favicon.ico'
+  %body{class: "#{ controller_name } #{ action_name }"}
+    - if flash.any?
+      - flash.each do |type, message|
+        .alert{class: "#{type}"}= message
+
+    = yield
+    
+    =# debug(params) if Rails.env.development?

@@ -1,0 +1,3 @@
+%tr{ class: ("current_score" if @score.id == score.id) }
+  %td= score.player.name
+  %td= format_time score.score

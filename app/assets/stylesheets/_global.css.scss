@@ -1,0 +1,60 @@
+/*
+  ========================================
+  Grid
+  ========================================
+*/
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*
+  ========================================
+  General
+  ========================================
+*/
+html, body {
+  height: 100%
+}
+body {
+  font-family: arial, sans-serif;
+  color: #333;
+  background-color: #eee;
+  background-color: $red;
+  background: repeating-linear-gradient(
+    $red, $red 50px, white 50px, white 100px
+  );
+}
+h1 {
+  font-size: 44px;
+  padding: 15px;
+}
+h2 {
+  font-size: 34px;
+  padding: 10px;
+}
+h3 {
+  font-size: 26px;
+  padding: 10px;
+}
+h4 {
+  font-size: 18px;
+}
+h1, h2, h3, h4 {
+  font-weight: bold;
+  text-shadow: #fff 0 1px 1px;
+}
+.alert {
+  height: 50px;
+  line-height: 50px;
+  width: 100%;
+  text-align: center;
+  background-color: white;
+  color: $red;
+  font-size: 24px;
+  font-weight: bold;
+  border-bottom: 1px solid $red;
+}

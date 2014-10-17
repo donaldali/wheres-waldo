@@ -2,7 +2,7 @@
 
 This is an implementation of the children's game [Where's Waldo (or Where's Wally)](http://en.wikipedia.org/wiki/Where's_Wally%3F) with a Rails back end and some front end JavaScript functionality for The Odin Project's [Project: Using a Rails Back End to Build "Where's Waldo" (a Photo Tagging App)](http://www.theodinproject.com/javascript-and-jquery/where-s-waldo-a-photo-tagging-app).
 
-[**_Play it on Heroku_**](http://dna-wheres-waldo.herokuapp.com/ "Where's Waldo").
+### [**_Play it on Heroku_**](http://dna-wheres-waldo.herokuapp.com/ "Where's Waldo").
 
 ## Gameplay
 
@@ -13,7 +13,7 @@ This is where the interaction between JavaScript on the front end and Rails on t
 
 After all characters are found, you are shown your score (how long it took you to find all characters) along with the top 20 scores for the board you have just played.
 
-_Obviously, your score will greatly improve if you play the same image multiple times...consider your first score, your true score._
+_Obviously, your score will greatly improve if you play the same image multiple times...consider your first score your true score._
 
 ## Setup
 
